@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <EditText
+        android:layout_width="271.6dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_above="@+id/listPeople"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/editName"
+        android:id="@+id/buttonAdd"
+        android:layout_alignParentRight="true" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonAdd"
+        android:id="@id/listPeople" />
+</RelativeLayout>
